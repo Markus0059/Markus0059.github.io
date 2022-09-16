@@ -1,0 +1,44 @@
+.carousel-item {
+  background-size: cover;
+  text-align: center;
+}
+
+.carousel-inner {
+  height: 350px;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+body {
+  font-family: 'Audiowide', cursive;
+  background-color: black;
+}
+
+.skill {
+  background-color: white;
+}
+
+.img img {
+  border-radius: 50%;
+  margin: 16px;
+  margin-right: 15%;
+
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.head h1 {
+  font-size: 56px;
+}
+
+.name {
+  margin-left: 15%;
+}
