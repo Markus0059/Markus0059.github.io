@@ -15,7 +15,7 @@ img {
 
 body {
   font-family: 'Audiowide', cursive;
-  background-color: black;
+  background-image: url("https://cdn.pixabay.com/photo/2018/04/28/16/40/network-3357642__340.jpg");
 }
 
 .presentation {
@@ -38,6 +38,8 @@ body {
   display: flex;
   align-items: center;
   color: white;
+  background-size: cover;
+  background-position: center;
 }
 
 .head h1 {
@@ -50,7 +52,6 @@ body {
 
 .title-post {
   text-align: center;
-  background-color: black;
   color: white;
   display: flex;
   justify-content: center;
