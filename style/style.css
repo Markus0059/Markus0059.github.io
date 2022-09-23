@@ -193,6 +193,12 @@ i {
   color: white;
 }
 
+.cards {
+  height: 200px;
+  width: 100%;
+  background-color: brown;
+}
+
 @media screen and (max-width: 600px) {
   p {
     max-width: 80%;
@@ -255,5 +261,15 @@ i {
   section h1,
   .footer-copyright h4 {
     font-size: 16px;
+  }
+
+  .photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    border: 0;
+    max-width: 80%;
+    margin: auto;
+    align-items: center;
   }
 }

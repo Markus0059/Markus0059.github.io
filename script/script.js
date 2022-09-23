@@ -1,5 +1,5 @@
-
 const cards = document.querySelector(".cards");
+
 
 const images = [
   "images/amazones/lesamazones-accueil.png",
