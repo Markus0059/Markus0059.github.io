@@ -48,12 +48,13 @@ const mySites = [
   "images/road2wheels.jpeg",
 ]
 
-const buttonInAct = document.querySelectorAll('.btn-inactive');
-const buttonAct = document.querySelector(".btn-active");
+const buttonInAct = document.querySelectorAll('.btn-inact');
+const buttonAct = document.querySelector(".btn-act");
 const button1 = document.getElementById("btn1");
 const button2 = document.getElementById("btn2");
 const button3 = document.getElementById("btn3");
 const button = document.querySelectorAll('button');
+const imgSite = document.getElementById("image-site");
 
 
 
@@ -61,8 +62,13 @@ button1.addEventListener('click', changeClass);
 button2.addEventListener('click', changeClass);
 button3.addEventListener('click', changeClass);
 
+button1.site = mySites[0];
+button2.site = mySites[1];
+button3.site = mySites[2];
 
 function changeClass(event) {
-  button.forEach((element) => element.className = "btn-inactive");
-  event.target.className = "btn-active";
+  console.log(event);
+  button.forEach((element) => element.className = "btn-inact");
+  event.target.className = "btn-act";
+  imgSite.src = event.target.site;
 }
