@@ -48,13 +48,20 @@ const mySites = [
   "images/road2wheels.jpeg",
 ]
 
+const myLiens = [
+  "amazones.html",
+  "menuiserie.html",
+  "road2wheels.html",
+]
+
 const buttonInAct = document.querySelectorAll('.btn-inact');
 const buttonAct = document.querySelector(".btn-act");
 const button1 = document.getElementById("btn1");
 const button2 = document.getElementById("btn2");
 const button3 = document.getElementById("btn3");
-const button = document.querySelectorAll('button');
+const button = document.querySelectorAll('.but');
 const imgSite = document.getElementById("image-site");
+const lienSite = document.getElementById("btn-details");
 
 
 
@@ -66,9 +73,16 @@ button1.site = mySites[0];
 button2.site = mySites[1];
 button3.site = mySites[2];
 
+button1.lien = myLiens[0];
+button2.lien = myLiens[1];
+button3.lien = myLiens[2];
+
+
+
 function changeClass(event) {
   console.log(event);
   button.forEach((element) => element.className = "btn-inact");
   event.target.className = "btn-act";
   imgSite.src = event.target.site;
+  lienSite.href = event.target.lien;
 }

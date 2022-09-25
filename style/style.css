@@ -127,6 +127,10 @@ h1 {
 
 /* Css Block WebSites */
 
+.websites {
+  height: 400px;
+}
+
 .websites h1 {
   color: white;
   margin-top: 16px;
@@ -135,7 +139,7 @@ h1 {
 .sites {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+
   height: 300px;
 }
 
@@ -162,15 +166,27 @@ h1 {
   color: white;
 }
 
-.image-site {
-  display: flex;
-  justify-content: center;
-
+.websites .image-site {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  height: 350px;
+  width: 80%;
+  margin: auto;
 }
 
 .image-site img {
-  max-height: 300px;
+  max-height: 250px;
+  margin: auto;
 }
+
+#btn-details {
+  width: 160px;
+}
+
+
 
 /* Css footer */
 
