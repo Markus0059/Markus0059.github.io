@@ -36,9 +36,9 @@ h1 {
 
 .card-img {
   border-radius: 10px 10px 0 0;
+  height: 22rem;
   background-size: cover;
   background-position: center;
-  height: 22rem;
   width: 100%;
   border-radius: 4px;
 }
@@ -71,7 +71,7 @@ a {
 
   .card-img {
     height: 11rem;
-    border-radius: 4px;
+
   }
 
   .cards {
