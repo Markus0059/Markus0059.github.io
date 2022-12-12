@@ -54,6 +54,13 @@ const myLiens = [
   "road2wheels.html",
 ]
 
+const texts = [
+  "Projet réalisé au Wagon de Lille . Application mobile destinée essentiellement aux femmes afin que celles-ci puisse"
+  + " voyager ensemble en toute sécurité",
+  "b",
+  "c",
+]
+
 const buttonInAct = document.querySelectorAll('.btn-inact');
 const buttonAct = document.querySelector(".btn-act");
 const button1 = document.getElementById("btn1");
@@ -62,6 +69,7 @@ const button3 = document.getElementById("btn3");
 const button = document.querySelectorAll('.but');
 const imgSite = document.getElementById("image-site");
 const lienSite = document.getElementById("btn-details");
+const textSite = document.getElementById("text-site");
 
 
 
@@ -77,6 +85,10 @@ button1.lien = myLiens[0];
 button2.lien = myLiens[1];
 button3.lien = myLiens[2];
 
+button1.text = texts[0];
+button2.text = texts[1];
+button3.text = texts[2];
+
 
 
 function changeClass(event) {
@@ -85,4 +97,5 @@ function changeClass(event) {
   event.target.className = "btn-act";
   imgSite.src = event.target.site;
   lienSite.href = event.target.lien;
+  textSite.textContent = event.target.text;
 }
