@@ -49,16 +49,23 @@ const mySites = [
 ]
 
 const myLiens = [
-  "amazones.html",
-  "menuiserie.html",
-  "road2wheels.html",
+  "https://github.com/DonGrosseto/LES_AMAZONES",
+  "https://github.com/markus0059/menuiserie",
+  "https://github.com/Koddak/road2wheels",
 ]
 
 const texts = [
   "Projet réalisé au Wagon de Lille . Application mobile destinée essentiellement aux femmes afin que celles-ci puisse"
   + " voyager ensemble en toute sécurité",
-  "b",
-  "c",
+  "Project personnel pour une entreprise de menuiserie familiale. Possibilité à l'administrateur d'ajouter des réalisations de chantier en attribuant une catégorie." +
+  " Par la suite, le client pourra ajouter un commentaire sur une réalisation",
+  " Project réalisé au Wagon de Lille . Application de location de motos entre particulier avec possibilité de localisation. API google map utilisée.",
+]
+
+const technos = [
+  "- Ruby / Rails / Bootstrap / JS",
+  "- Ruby / Rails / JS",
+  "- Ruby / Rails / Bootstrap / JS",
 ]
 
 const buttonInAct = document.querySelectorAll('.btn-inact');
@@ -70,6 +77,7 @@ const button = document.querySelectorAll('.but');
 const imgSite = document.getElementById("image-site");
 const lienSite = document.getElementById("btn-details");
 const textSite = document.getElementById("text-site");
+const technoSite = document.getElementById("text-techno");
 
 
 
@@ -89,6 +97,10 @@ button1.text = texts[0];
 button2.text = texts[1];
 button3.text = texts[2];
 
+button1.techno = technos[0];
+button2.techno = technos[1];
+button3.techno = technos[2];
+
 
 
 function changeClass(event) {
@@ -98,4 +110,5 @@ function changeClass(event) {
   imgSite.src = event.target.site;
   lienSite.href = event.target.lien;
   textSite.textContent = event.target.text;
+  technoSite.textContent = event.target.techno;
 }

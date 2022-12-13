@@ -194,24 +194,12 @@ h1 {
   margin-top: 16px;
 }
 
-/* .sites {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  height: 300px;
-} */
-
 .websites button {
   width: 100%;
   height: 48px;
   margin: 0px;
   padding: 0;
   border-width: 0;
-  /* border-radius: 8px; */
-}
-
-.websites button:hover {
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.804);
 }
 
 .websites .buttons {
@@ -221,20 +209,24 @@ h1 {
   text-align: center;
 }
 
-.btn-act {
-  background-color: rgba(255, 255, 255, 0.804);
-  color:#000080;
-  text-decoration: underline;
+.site-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 8px;
 }
 
-.btn-inact {
-  background-color: rgba(255, 255, 255, 0.804);
-  color:#000080;
-}
 
 .btn-git {
-  color: #000080;
+  color: white;
   border-radius: 8px;
+  background-color: #000080;
+}
+
+.btn-git:hover {
+  color: #000080;
+  background-color: white;
+  border: 0.3px solid #000080;
 }
 
 .websites .image-site {
@@ -246,23 +238,44 @@ h1 {
   height: 450px;
   width: 60%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.804);
+  background-color: black;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.592);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.592);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.592);
 }
 
 .image-site p{
   letter-spacing: 0.2px;
   margin: 8px;
-  color: darkblue;
+  color: white;
 }
 
 #btn1{
   border-top-left-radius: 8px;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.592);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.592);
 }
 
 #btn3{
   border-top-right-radius: 8px;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.592);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.592);
+}
+
+#btn2{
+  border-top: 0.5px solid rgba(255, 255, 255, 0.592);
+}
+
+.btn-act {
+  background-color: black;
+  color: white;
+}
+
+.btn-inact {
+  background-color: white;
+  color:#000080;
 }
 
 .image-site img {
@@ -270,6 +283,7 @@ h1 {
   margin: auto;
   margin-top: 45px;
   margin-bottom: 16px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.677);
 }
 
 #btn-details {
