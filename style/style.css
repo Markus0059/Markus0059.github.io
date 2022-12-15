@@ -265,13 +265,13 @@ ul {
   border-top: 0.5px solid rgba(255, 255, 255, 0.592);
 }
 
-#btn3{
+#btn4{
   border-top-right-radius: 8px;
   border-right: 0.5px solid rgba(255, 255, 255, 0.592);
   border-top: 0.5px solid rgba(255, 255, 255, 0.592);
 }
 
-#btn2{
+#btn2, #btn3{
   border-top: 0.5px solid rgba(255, 255, 255, 0.592);
 }
 

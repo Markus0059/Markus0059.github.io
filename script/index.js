@@ -46,12 +46,14 @@ const mySites = [
   "images/amazones/lesamazones-accueil.png",
   "images/menuiserie.jpeg",
   "images/road2wheels.jpeg",
+  "images/wildSupplies.jpeg",
 ]
 
 const myLiens = [
   "https://github.com/DonGrosseto/LES_AMAZONES",
   "https://github.com/markus0059/menuiserie",
   "https://github.com/Koddak/road2wheels",
+  "https://github.com/WildCodeSchool/noname",
 ]
 
 const texts = [
@@ -60,12 +62,14 @@ const texts = [
   "Project personnel pour une entreprise de menuiserie familiale. Possibilité à l'administrateur d'ajouter des réalisations de chantier en attribuant une catégorie." +
   " Par la suite, le client pourra ajouter un commentaire sur une réalisation",
   " Project réalisé au Wagon de Lille . Application de location de motos entre particulier avec possibilité de localisation. API google map utilisée.",
+  "Project réalisé à la WildCodeSchool . Site Web de vente de biens entre particuliers. Un Compte admin fut créer permettant ainsi de modifier le caroussel et les catégories",
 ]
 
 const technos = [
   "- Ruby / Rails / Bootstrap / JS",
   "- Ruby / Rails / JS",
   "- Ruby / Rails / Bootstrap / JS",
+  "- PHP / Twig / JS (project ensuite basculé en Symfony",
 ]
 
 const buttonInAct = document.querySelectorAll('.btn-inact');
@@ -73,6 +77,7 @@ const buttonAct = document.querySelector(".btn-act");
 const button1 = document.getElementById("btn1");
 const button2 = document.getElementById("btn2");
 const button3 = document.getElementById("btn3");
+const button4 = document.getElementById("btn4");
 const button = document.querySelectorAll('.but');
 const imgSite = document.getElementById("image-site");
 const lienSite = document.getElementById("btn-details");
@@ -84,22 +89,27 @@ const technoSite = document.getElementById("text-techno");
 button1.addEventListener('click', changeClass);
 button2.addEventListener('click', changeClass);
 button3.addEventListener('click', changeClass);
+button4.addEventListener('click', changeClass);
 
 button1.site = mySites[0];
 button2.site = mySites[1];
 button3.site = mySites[2];
+button4.site = mySites[3];
 
 button1.lien = myLiens[0];
 button2.lien = myLiens[1];
 button3.lien = myLiens[2];
+button4.lien = myLiens[3];
 
 button1.text = texts[0];
 button2.text = texts[1];
 button3.text = texts[2];
+button4.text = texts[3];
 
 button1.techno = technos[0];
 button2.techno = technos[1];
 button3.techno = technos[2];
+button4.techno = technos[3];
 
 
 
