@@ -1,6 +1,6 @@
 /* reset */
 
-*{
+* {
   box-sizing: border-box;
   outline: none;
   margin: 0;
@@ -17,7 +17,7 @@
   height: 400px;
 }
 
-.background{
+.background {
   background-image: url(/images/background.png);
   background-size: cover;
   width: 100%;
@@ -32,7 +32,7 @@
 }
 
 p {
-  font-size:large;
+  font-size: large;
   letter-spacing: 1px;
 }
 
@@ -157,6 +157,7 @@ a {
   border-radius: 8px;
   border: 0.5px solid rgba(255, 255, 255, 0.592);
   padding: 15px;
+  margin: 0 10px 0 10px;
 }
 
 .title {
@@ -172,7 +173,7 @@ a {
   color: white;
 }
 
-.border-liner{
+.border-liner {
   height: 4px;
   width: 15%;
   border-radius: 8px;
@@ -215,7 +216,7 @@ ul {
   width: 100%;
   height: 48px;
   margin: 0px;
-  padding: 0;
+  padding: 1px;
   border-width: 0;
 }
 
@@ -263,36 +264,39 @@ ul {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.592);
 }
 
-.image-site p{
+.image-site p {
   letter-spacing: 0.2px;
   margin: 8px;
   color: white;
 }
 
-#btn1{
+#btn1 {
   border-top-left-radius: 8px;
   border-left: 0.5px solid rgba(255, 255, 255, 0.592);
   border-top: 0.5px solid rgba(255, 255, 255, 0.592);
 }
 
-#btn4{
+#btn4 {
   border-top-right-radius: 8px;
   border-right: 0.5px solid rgba(255, 255, 255, 0.592);
   border-top: 0.5px solid rgba(255, 255, 255, 0.592);
 }
 
-#btn2, #btn3{
+#btn2,
+#btn3 {
   border-top: 0.5px solid rgba(255, 255, 255, 0.592);
 }
 
 .btn-act {
   background-color: black;
   color: white;
+
 }
 
 .btn-inact {
   background-color: white;
-  color:#000080;
+  color: black;
+
 }
 
 .image-site img {
@@ -308,7 +312,7 @@ ul {
   margin-bottom: 8px;
 }
 
-.techno-mobile{
+.techno-mobile {
   display: none;
 }
 
@@ -356,9 +360,9 @@ ul {
   padding: 0 20px;
 }
 
-.navbar-link > a {
- color: white;
- font-size: 20px;
+.navbar-link>a {
+  color: white;
+  font-size: 20px;
 }
 
 .burger {
@@ -372,6 +376,27 @@ i {
 }
 
 @media screen and (max-width: 1100px) {
+
+  .head {
+    margin-bottom: 16px;
+  }
+
+  .head h1 {
+    font-size: 30px;
+  }
+
+  .title-post {
+    margin-bottom: 48px;
+  }
+
+  .title-post h1 {
+    font-size: 48px;
+  }
+
+  .navbar-link>a {
+    font-size: 15px;
+  }
+
   .presentation {
     max-width: 80%;
   }
@@ -395,7 +420,7 @@ i {
     display: none;
   }
 
-  .techno-mobile{
+  .techno-mobile {
     display: block;
   }
 
@@ -408,7 +433,7 @@ i {
 
   .techno-mobile {
     width: 80%;
-    margin:auto;
+    margin: auto;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -421,19 +446,21 @@ i {
 
   }
 }
+
 /* Css mobile screen */
 
 @media screen and (min-width: 768px) {
-  .navbar-link > a::after {
+  .navbar-link>a::after {
     display: block;
     content: "";
     width: 0;
     height: 1px;
     background-color: white;
-    transition:width .4s;
+    transition: width .4s;
   }
-  .navbar-link:hover > a::after {
-   width: 100%;
+
+  .navbar-link:hover>a::after {
+    width: 100%;
   }
 }
 
@@ -449,6 +476,7 @@ i {
     right: 0;
     background-color: black;
     transition: all .5s ease-in-out;
+    padding: 0;
   }
 
   .show-nav .navbar-links {
@@ -463,14 +491,14 @@ i {
     transform: translateX(0);
   }
 
-  .navbar-link > a {
+  .navbar-link>a {
     display: block;
     padding: 10px;
     font-size: 30px;
     transition: all .4s ease-in-out;
   }
 
-  .navbar-link > a:hover {
+  .navbar-link>a:hover {
     display: block;
     padding-left: 20px;
     letter-spacing: 5px;
@@ -501,7 +529,8 @@ i {
     background: transparent;
   }
 
-  .bar::before, .bar::after {
+  .bar::before,
+  .bar::after {
     content: "";
     width: 45px;
     height: 4px;
@@ -550,6 +579,10 @@ i {
     padding: 4px;
   }
 
+  .title-post {
+    margin-bottom: 16px;
+  }
+
   .title-post h1 {
     font-size: 2em;
     margin: 0 16px 16px 16px;
@@ -557,7 +590,7 @@ i {
 
   .head h1 {
     font-size: 2rem;
-    margin-right: 24px;
+    margin-right: 0px;
 
   }
 
@@ -582,6 +615,7 @@ i {
   .footer {
     height: 60px;
   }
+
   .footer-copyright h4 {
     font-size: 12px;
   }
@@ -596,7 +630,7 @@ i {
     align-items: center;
   }
 
-  .websites{
+  .websites {
     margin-top: 50px;
   }
 
@@ -614,12 +648,13 @@ i {
     width: 90%;
   }
 
-  .name h1{
-    font-size: 20px;
+  .name h1 {
+    font-size: 24px;
+    text-align: center;
   }
 
   .name {
-    margin-left: 5%;
+    margin: 16px 0 32px 0;
   }
 
   .head {
@@ -628,10 +663,13 @@ i {
 
   .img img {
     max-width: 40%;
+    margin: 16px 0 0 0;
+
+
   }
 
   .tab {
-    margin-bottom: 15px;
+    margin-bottom: 48px;
   }
 
   .sites {
@@ -650,6 +688,7 @@ i {
 
   .title-block {
     text-align: center;
+    margin-left: 0;
   }
 
   .border-liner {
